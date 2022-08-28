@@ -1,7 +1,7 @@
 body {
   padding-top: 98px !important;
   padding-left: 236px !important;
-  background-color: #f7f7f7;
+  background-color: rgb(237 238 241);
   transition: all .6s;
 }
 
@@ -144,6 +144,27 @@ body {
   margin-left: 28px;
 }
 
+.communityinfo-editbtn-wrap {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+}
+
+.communityinfo-edit-btn {
+  border: none;
+  padding: 11px;
+  border-radius: 5px;
+  background: white;
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+
+.CommunityInfo:hover .communityinfo-edit-btn {
+  opacity: 1;
+}
+
 @media screen and (max-width:768px) {
   .community-img {
     height: 230px;
@@ -156,4 +177,56 @@ body {
   .communitybanner-name {
     font-size: 26px !important;
   }
+}
+
+
+.card {
+  background: white;
+  border-radius: 5px;
+}
+
+/* description-card  */
+
+.description-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #d9d9d9; */
+  background-color: #f8f9fc;
+}
+
+.card-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 1px solid #d9d9d9; */
+  background-color: rgb(248 249 252);
+}
+
+.card-title {
+  color: #1d87f1;
+}
+
+.owner-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-block;
+  object-fit: cover;
+}
+
+.owner-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #eaf3fb;
+  border-radius: 10px;
+
+}
+
+.owner-name {
+  display: inline-block;
+  font-size: 21px;
+  color: black;
 }
