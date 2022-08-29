@@ -371,10 +371,92 @@
   <section>
     <div class="row m-0">
       <div class="col-md-8  mt-4">
-
+        <div class="community-updates-container p-3">
+          <div class="card-title-wrap ">
+            <h5 class="m-0 card-title">Updates</h5>
+            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
+          </div>
+          <div class="group-info-wrap mt-3">
+            <div class="d-flex">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/image.jpg" alt="">
+              </div>
+              <div class="group-info-wrap ml-3">
+                <p class="group-name m-0">General</p>
+                <p class="user-name m-0 ml-2">@Arun</p>
+                <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+              </div>
+            </div>
+            <div class="group-edit-wrap pr-3">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
+        </div>
       </div>
+      <style>
+        .community-updates-container {
+          background-color: #ffffff;
+          border-radius: 10px;
+        }
+
+        .group-img-wrap,
+        .group-info-wrap,
+        .group-edit-wrap {
+          display: inline-block;
+        }
+
+        .group-info-wrap {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .group-name,
+        .user-name,
+        .post-time {
+          display: inline;
+          font-size: 25px;
+        }
+
+        .user-name,
+        .post-time {
+          font-weight: 300;
+          font-size: 20px;
+          color: #3b3939;
+        }
+
+        .group-img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .group-name {
+          color: #3b3939;
+          font-weight: 600;
+        }
+
+        @media screen and (max-width:768px) {
+        .group-name,
+        .user-name,
+        .post-time {
+          font-size: 13px;
+        }
+        .group-img {
+          width: 58px;
+          height: 58px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        }
+      </style>
 
       <div class="col-md-4  mt-4">
+        <div class="add-widget-container">
+          <i class="fa-solid fa-plus addwidget-icon"></i>
+          <p class="m-0 ml-3 addWidget-text">Add Widget</p>
+        </div>
         <div class=" card">
           <div class="card-title-wrap p-3">
             <h5 class="m-0 card-title">Community Leaderboard</h5>
@@ -403,7 +485,7 @@
               </div>
               <button class="owner-connect-btn">Connect</button>
             </div>
-            <div class="show-more-wrap ">
+            <div class="show-more-wrap m-2 ">
               <h3 class="show-more">Show More</h3>
             </div>
           </div>

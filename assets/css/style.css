@@ -1,8 +1,9 @@
 body {
   padding-top: 98px !important;
   padding-left: 236px !important;
-  background-color: rgb(239 240 241);
+  background-color: #eff0f1;
   transition: all .6s;
+  margin-bottom: 40px;
 }
 
 @media (max-width:768px) {
@@ -277,4 +278,27 @@ body {
   border-radius: 20px;
   color: white;
   background: #1d9bf0;
+}
+
+/* add widget */
+.add-widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  background: white;
+  padding: 13px;
+  border-radius: 10px;
+  font-size: 23px;
+  color: #626060;
+  font-weight: 600;
+}
+
+.addWidget-text {
+  font-size: 20px;
+}
+
+.addwidget-icon,
+.addWidget-text {
+  display: inline-block;
 }
