@@ -197,6 +197,7 @@ body {
   background: white;
   border-radius: 5px;
   border: none;
+  overflow: auto;
 }
 
 /* description-card  */
@@ -331,10 +332,18 @@ body {
 }
 
 /* conver card size in sm devices */
-
-@media screen and (max-width:768px) {
-  .card-to-sm {}
+@media screen and (max-width:1098px) {
+  .group-title-info {
+    display: none;
+  }
 }
+
+@media screen and (max-width:765px) {
+  .group-title-info {
+    display: block;
+  }
+}
+
 
 /* quick assess */
 .settingsicon-wrap,
@@ -356,4 +365,5 @@ body {
   display: flex;
   align-items: center;
   grid-gap: 20px;
+  overflow: auto;
 }
