@@ -376,21 +376,22 @@
             <h5 class="m-0 card-title">Updates</h5>
             <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
           </div>
-          <div class="group-info-wrap mt-3">
-            <div class="d-flex">
-              <div class="group-img-wrap">
-                <img class="group-img" src="assets/img/image.jpg" alt="">
-              </div>
+          <div class="list-info-wrap mt-3">
+            <div class="group-img-wrap">
+              <img class="group-img" src="assets/img/image.jpg" alt="">
+            </div>
+            <div class="group-info-container">
               <div class="group-info-wrap ml-3">
                 <p class="group-name m-0">General</p>
                 <p class="user-name m-0 ml-2">@Arun</p>
                 <p class="post-time m-0 ml-2">. Mar 12,2022</p>
               </div>
-            </div>
-            <div class="group-edit-wrap pr-3">
-              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="group-edit-wrap pl-1 pr-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
       <style>
@@ -403,12 +404,6 @@
         .group-info-wrap,
         .group-edit-wrap {
           display: inline-block;
-        }
-
-        .group-info-wrap {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
         }
 
         .group-name,
@@ -437,6 +432,20 @@
           font-weight: 600;
         }
 
+        .list-info-wrap {
+          display: grid;
+          grid-template-columns: 80px 1fr;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .group-info-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+        }
+
         @media screen and (max-width:768px) {
 
           .group-name,
@@ -450,6 +459,10 @@
             height: 58px;
             border-radius: 50%;
             object-fit: cover;
+          }
+
+          .list-info-wrap {
+            grid-template-columns: 59px 1fr;
           }
         }
       </style>
