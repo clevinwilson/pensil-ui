@@ -1,7 +1,7 @@
 body {
   padding-top: 98px !important;
   padding-left: 236px !important;
-  background-color: rgb(237 238 241);
+  background-color: rgb(244 245 246);
   transition: all .6s;
 }
 
@@ -110,7 +110,9 @@ body {
   height: 500px;
   width: 100%;
   object-fit: cover;
-  border-radius: 13px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 .CommunityInfo {
@@ -142,7 +144,7 @@ body {
 }
 
 @media screen and (min-width:1061px) {
-  .communitybanner-name-wrap{
+  .communitybanner-name-wrap {
     width: 39% !important;
   }
 }
@@ -196,6 +198,13 @@ body {
 }
 
 /* description-card  */
+
+.description-wrap {
+  margin-top: 10px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 
 .description-title-wrap {
   display: flex;
