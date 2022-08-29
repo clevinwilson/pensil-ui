@@ -302,3 +302,38 @@ body {
 .addWidget-text {
   display: inline-block;
 }
+
+/* ongoing */
+.group-title-info {
+  display: inline-block;
+
+}
+
+.ongoing-card-info {
+  display: flex;
+  vertical-align: top;
+}
+
+.join-btn {
+  padding: 3px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 20px;
+  color: #1d9bf0;
+  border: 1px solid #1d9bf0;
+  background: #ffffff;
+  transition: all .4s;
+}
+
+.join-btn:hover {
+  background-color: #1d9bf0;
+  color: #ffffff;
+}
+
+/* conver card size in sm devices */
+
+@media screen and (max-width:768px) {
+ .card-to-sm{
+  
+ }
+}

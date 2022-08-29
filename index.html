@@ -479,103 +479,6 @@
           </div>
         </div>
       </div>
-      <style>
-        .community-updates-container {
-          background-color: #ffffff;
-          border-radius: 10px;
-        }
-
-        .group-img-wrap,
-        .group-info-wrap,
-        .group-edit-wrap,
-        .comment-btn-wrap,
-        .comment-btn-wrap {
-          display: inline-block;
-        }
-
-        .group-name,
-        .user-name,
-        .post-time {
-          display: inline;
-          font-size: 25px;
-        }
-
-        .user-name,
-        .post-time {
-          font-weight: 300;
-          font-size: 20px;
-          color: #3b3939;
-        }
-
-        .group-img {
-          width: 70px;
-          height: 70px;
-          border-radius: 50%;
-          object-fit: cover;
-        }
-
-        .group-img-wrap {
-          vertical-align: top;
-          transition: none;
-        }
-
-        .group-name {
-          color: #3b3939;
-          font-weight: 600;
-        }
-
-        .list-info-wrap {
-          display: grid;
-          grid-template-columns: 80px 1fr;
-          justify-content: center;
-          border-bottom: 1px solid #d7d7d7;
-          padding-bottom: 6px;
-        }
-
-        .group-info-container {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-        }
-
-        .post-content {
-          font-size: 18px;
-          color: #2b2b2b;
-          display: block;
-        }
-
-        .post-time {
-          font-size: 13px;
-        }
-
-        .card-bottom-section {
-          padding: 3px;
-          display: flex;
-          align-items: center;
-          justify-content: left;
-        }
-
-        @media screen and (max-width:768px) {
-
-          .group-name,
-          .user-name,
-          .post-time {
-            font-size: 13px;
-          }
-
-          .group-img {
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
-
-          .list-info-wrap {
-            grid-template-columns: 59px 1fr;
-          }
-        }
-      </style>
 
       <div class="col-md-4  mt-4">
         <div class="add-widget-container">
@@ -583,6 +486,40 @@
           <p class="m-0 ml-3 addWidget-text">Add Widget</p>
         </div>
         <div class=" card">
+          <div class="card-title-wrap p-3">
+            <h5 class="m-0 card-title">ongoing</h5>
+            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
+          </div>
+          <div class="card-body p-3">
+            <div class="owner-list-container m-2">
+              <div class="ongoing-card-info">
+                <img class="owner-img" src="assets/img/group-img1.png" alt="">
+                <div class="group-title-info ml-2">
+                  <p class="owner-name m-0">General</p>
+                  <p class="m-0"><span class="mr-1 text-primary">&#x2022;</span>Audio room</p>
+                </div>
+              </div>
+              <button class="join-btn">Join</button>
+            </div>
+
+            <div class="owner-list-container m-2">
+              <div class="ongoing-card-info">
+                <img class="owner-img" src="assets/img/group-img2.png" alt="">
+                <div class="group-title-info ml-2">
+                  <p class="owner-name m-0">Doubt Solving</p>
+                  <p class="m-0"><span class="mr-1 text-danger">&#x2022;</span>Live</p>
+                </div>
+              </div>
+              <button class="join-btn">Join</button>
+            </div>
+
+            <div class="show-more-wrap m-2 ">
+              <h3 class="show-more">Show More</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class=" card mt-3">
           <div class="card-title-wrap p-3">
             <h5 class="m-0 card-title">Community Leaderboard</h5>
             <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
@@ -644,6 +581,107 @@
       </div>
     </div>
   </div>
+
+
+  <!-- Updates -->
+        <style>
+          .community-updates-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+          }
+        
+          .group-img-wrap,
+          .group-info-wrap,
+          .group-edit-wrap,
+          .comment-btn-wrap,
+          .comment-btn-wrap {
+            display: inline-block;
+          }
+        
+          .group-name,
+          .user-name,
+          .post-time {
+            display: inline;
+            font-size: 25px;
+          }
+        
+          .user-name,
+          .post-time {
+            font-weight: 300;
+            font-size: 20px;
+            color: #3b3939;
+          }
+        
+          .group-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        
+          .group-img-wrap {
+            vertical-align: top;
+            transition: none;
+          }
+        
+          .group-name {
+            color: #3b3939;
+            font-weight: 600;
+          }
+        
+          .list-info-wrap {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            justify-content: center;
+            border-bottom: 1px solid #d7d7d7;
+            padding-bottom: 6px;
+          }
+        
+          .group-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+          }
+        
+          .post-content {
+            font-size: 18px;
+            color: #2b2b2b;
+            display: block;
+          }
+        
+          .post-time {
+            font-size: 13px;
+          }
+        
+          .card-bottom-section {
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+          }
+        
+          @media screen and (max-width:768px) {
+        
+            .group-name,
+            .user-name,
+            .post-time {
+              font-size: 13px;
+            }
+        
+            .group-img {
+              width: 58px;
+              height: 58px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+        
+            .list-info-wrap {
+              grid-template-columns: 59px 1fr;
+            }
+          }
+        </style>
+
 
   <!-- Bootstrap core JavaScript-->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
