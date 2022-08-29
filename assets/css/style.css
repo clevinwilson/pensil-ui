@@ -124,24 +124,34 @@ body {
 
 .communitybanner-name-wrap {
   position: absolute;
-  bottom: 0px;
-  width: 100%;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  bottom: 62px;
+  width: 52%;
+  height: 40%;
+  top: 140px;
+  right: 0;
+  border-bottom-left-radius: 145px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 145px;
   padding-left: 18px;
-  height: 115px;
-  background: #3c494f4f;
+  /* height: 115px; */
+  background: white;
   color: white;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  backdrop-filter: blur(4px);
+}
+
+@media screen and (min-width:1061px) {
+  .communitybanner-name-wrap{
+    width: 39% !important;
+  }
 }
 
 .communitybanner-name {
-  font-size: 37px;
+  font-size: 62px;
   font-weight: 600;
   margin-left: 28px;
+  color: #000;
 }
 
 .communityinfo-editbtn-wrap {
