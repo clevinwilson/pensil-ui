@@ -378,20 +378,105 @@
           </div>
           <div class="list-info-wrap mt-3">
             <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/image.jpg" alt="">
+              <img class="group-img" src="assets/img/group-img1.png" alt="">
             </div>
-            <div class="group-info-container">
-              <div class="group-info-wrap ml-3">
-                <p class="group-name m-0">General</p>
-                <p class="user-name m-0 ml-2">@Arun</p>
-                <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+            <div class="left-section ml-3">
+              <div class="group-info-container">
+                <div class="group-info-wrap ">
+                  <p class="group-name m-0">General</p>
+                  <p class="user-name m-0 ml-2">@Arun</p>
+                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                </div>
+                <!-- <div class="group-edit-wrap pl-1 pr-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div> -->
               </div>
-              <div class="group-edit-wrap pl-1 pr-2">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
+              <div class="post-content-wrap  mt-2">
+                <div class="post-content mb-0">JavaScript Programming Tutorial - Full JavaScript Course for Beginners
+                </div>
+                <p class="post-time m-0">29 Aug 2022</p>
               </div>
+              <div class="card-bottom-section mt-2">
+                <div class="like-btn-wrap">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>0</span>
+                </div>
+                <div class="comment-btn-wrap ml-4">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>0</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="list-info-wrap mt-3">
+            <div class="group-img-wrap">
+              <img class="group-img" src="assets/img/group-img2.png" alt="">
+            </div>
+            <div class="left-section ml-3">
+              <div class="group-info-container">
+                <div class="group-info-wrap ">
+                  <p class="group-name m-0">Doubt Solving</p>
+                  <p class="user-name m-0 ml-2">@Aleena</p>
+                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                </div>
+                <!-- <div class="group-edit-wrap pl-1 pr-2">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div> -->
+              </div>
+              <div class="post-content-wrap  mt-2">
+                <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
+                <p class="post-time m-0">29 Aug 2022</p>
+              </div>
+              <div class="card-bottom-section mt-2">
+                <div class="like-btn-wrap">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>0</span>
+                </div>
+                <div class="comment-btn-wrap ml-4">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>0</span>
+                </div>
+              </div>
+
             </div>
           </div>
 
+          <div class="list-info-wrap mt-3">
+            <div class="group-img-wrap">
+              <img class="group-img" src="assets/img/group-img3.png" alt="">
+            </div>
+            <div class="left-section ml-3">
+              <div class="group-info-container">
+                <div class="group-info-wrap ">
+                  <p class="group-name m-0">Premium</p>
+                  <p class="user-name m-0 ml-2">@Sonu</p>
+                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                </div>
+                <!-- <div class="group-edit-wrap pl-1 pr-2">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div> -->
+              </div>
+              <div class="post-content-wrap  mt-2">
+                <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
+                <p class="post-time m-0">29 Aug 2022</p>
+              </div>
+              <div class="card-bottom-section mt-2">
+                <div class="like-btn-wrap">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>0</span>
+                </div>
+                <div class="comment-btn-wrap ml-4">
+                  <i class="fa-regular fa-comment"></i>
+                  <span>0</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="show-more-wrap m-2 mt-4 ">
+            <h3 class="show-more">Show More</h3>
+          </div>
         </div>
       </div>
       <style>
@@ -402,7 +487,9 @@
 
         .group-img-wrap,
         .group-info-wrap,
-        .group-edit-wrap {
+        .group-edit-wrap,
+        .comment-btn-wrap,
+        .comment-btn-wrap {
           display: inline-block;
         }
 
@@ -427,6 +514,11 @@
           object-fit: cover;
         }
 
+        .group-img-wrap {
+          vertical-align: top;
+          transition: none;
+        }
+
         .group-name {
           color: #3b3939;
           font-weight: 600;
@@ -436,7 +528,8 @@
           display: grid;
           grid-template-columns: 80px 1fr;
           justify-content: center;
-          align-items: center;
+          border-bottom: 1px solid #d7d7d7;
+          padding-bottom: 6px;
         }
 
         .group-info-container {
@@ -444,6 +537,23 @@
           justify-content: space-between;
           align-items: center;
 
+        }
+
+        .post-content {
+          font-size: 18px;
+          color: #2b2b2b;
+          display: block;
+        }
+
+        .post-time {
+          font-size: 13px;
+        }
+
+        .card-bottom-section {
+          padding: 3px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
         }
 
         @media screen and (max-width:768px) {
@@ -478,7 +588,6 @@
             <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
           </div>
           <div class="card-body p-3">
-
             <div class="owner-list-container m-2">
               <div>
                 <img class="owner-img" src="assets/img/user1.png" alt="">
