@@ -333,7 +333,27 @@ body {
 /* conver card size in sm devices */
 
 @media screen and (max-width:768px) {
- .card-to-sm{
-  
- }
+  .card-to-sm {}
+}
+
+/* quick assess */
+.settingsicon-wrap,
+.usersicon-wrap,
+.progressicon-wrap {
+  display: inline-block
+}
+
+.quick-access-icons {
+  font-size: 23px;
+  color: white;
+  background: gray;
+  padding: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.quick-access-icons-wrap {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
 }
