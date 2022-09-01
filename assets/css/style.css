@@ -293,6 +293,11 @@ body {
   font-size: 23px;
   color: #626060;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.addwidget-icon {
+  color: #1d87f1;
 }
 
 .addWidget-text {
