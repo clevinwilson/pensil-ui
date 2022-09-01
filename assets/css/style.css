@@ -372,3 +372,46 @@ body {
   grid-gap: 20px;
   overflow: auto;
 }
+
+
+/* event quick access card */
+.quick-event-wrap {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+}
+
+.quick-event-wrap {
+  font-size: 19px;
+}
+
+.event-notify-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.notify-icon {
+  background: #ffffff;
+  padding: 9px;
+  color: #1d9bf0;
+  font-size: 15px;
+  border: 1px solid #1d9bf0;
+  border-radius: 50%;
+  transition: all .4s;
+}
+
+.notify-icon:hover {
+  background-color: #1d9bf0;
+  color: #ffffff;
+}
+
+.event-time {
+  font-weight: 700;
+  color: #686868;
+}
+
+.event-title{
+  font-size: 17px;
+}
