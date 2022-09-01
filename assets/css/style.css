@@ -444,3 +444,16 @@ body {
 .event-title {
   font-size: 17px;
 }
+
+
+/* posts */
+
+.post-img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.post-hash-tags {
+  color: #1091e9;
+  font-size: 14px;
+}
