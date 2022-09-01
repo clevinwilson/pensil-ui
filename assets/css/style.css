@@ -29,6 +29,33 @@ body {
   bottom: 0;
 }
 
+.sidebar-heading {
+  color: rgb(29 135 241) !important;
+}
+
+/* sidebar groups  */
+.sidebar-group-imgs {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.pinned-groups {
+  font-size: 14px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-grouplist {
+  color: black !important;
+  transition: all .4s;
+}
+
+.nav-grouplist:hover {
+  background-color: #f2f2f2;
+}
 
 /* community logo  */
 .community-info-container {
@@ -414,6 +441,6 @@ body {
   color: #686868;
 }
 
-.event-title{
+.event-title {
   font-size: 17px;
 }
