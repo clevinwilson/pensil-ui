@@ -479,8 +479,44 @@ body {
   align-items: center;
 }
 
-.testimonials-img{
-  width: 120px;
-  height: 120px;
+.testimonials-img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
+}
+
+
+/* tab */
+.tab-container {
+  background: white;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 6px;
+}
+
+.tab-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.tab-list::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+@media screen and (max-width:477px) {
+  .tab-list {
+    padding-left: 75px;
+  }
 }
