@@ -503,11 +503,19 @@ body {
 }
 
 .tab-item {
-  margin-left: 10px;
-  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 16px;
-  font-weight: 600;
-  color: black;
+  font-weight: 700;
+  color: #828080;
+  cursor: pointer;
+  border-bottom: 3px solid white;
+  transition: all .3s;
+}
+
+.tab-item:focus {
+  border-bottom: 3px solid #1d87f1 !important;
+  color: black !important;
 }
 
 .tab-list::-webkit-scrollbar {
