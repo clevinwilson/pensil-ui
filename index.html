@@ -325,200 +325,203 @@
       <div class="col-md-8  mt-4">
         <div class="tab-container">
           <div class="tab-list">
-            <div class="tab-item ml-2" tabindex="1">
+            <div class="tab-item ml-2" onclick="openCity(event, 0)" tabindex="1">
               Updates
             </div>
-            <div class="tab-item ml-2" tabindex="1">
+            <div class="tab-item ml-2" onclick="openCity(event, 1)" tabindex="1">
               Description
             </div>
-            <div class="tab-item ml-2" tabindex="1">
+            <div class="tab-item ml-2" onclick="openCity(event, 2)" tabindex="1">
               Owner & members
             </div>
-            <div class="tab-item ml-2" tabindex="1">
+            <div class="tab-item ml-2" onclick="openCity(event, 3)" tabindex="1">
               Testimonials
             </div>
-            <div class="tab-item ml-2" tabindex="1">
+            <div class="tab-item ml-2" onclick="openCity(event, 4)" tabindex="1">
               FAQs
             </div>
           </div>
         </div>
-        <div class="community-updates-container p-3">
-          <div class="card-title-wrap ">
-            <h5 class="m-0 card-title">Updates</h5>
-            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
-          </div>
-          <div class="list-info-wrap mt-3">
-            <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/group-img1.png" alt="">
+
+        <div class="tabcontent">
+          <div id="updates" class="community-updates-container p-3">
+            <div class="card-title-wrap ">
+              <h5 class="m-0 card-title">Updates</h5>
+              <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
             </div>
-            <div class="left-section ml-3">
-              <div class="group-info-container">
-                <div class="group-info-wrap ">
-                  <p class="group-name m-0">General</p>
-                  <p class="user-name m-0 ml-2">@Arun</p>
-                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
-                </div>
-                <!-- <div class="group-edit-wrap pl-1 pr-2">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div> -->
+            <div class="list-info-wrap mt-3">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/group-img1.png" alt="">
               </div>
-              <div class="post-content-wrap  mt-2">
-                <div class="post-content mb-0">JavaScript Programming Tutorial - Full JavaScript Course for Beginners
-                </div>
-                <p class="post-time m-0">29 Aug 2022</p>
-              </div>
-              <div class="card-bottom-section mt-2">
-                <div class="like-btn-wrap">
-                  <i class="fa-regular fa-heart"></i>
-                  <span>0</span>
-                </div>
-                <div class="comment-btn-wrap ml-4">
-                  <i class="fa-regular fa-comment"></i>
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="list-info-wrap mt-3">
-            <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/group-img2.png" alt="">
-            </div>
-            <div class="left-section ml-3">
-              <div class="group-info-container">
-                <div class="group-info-wrap ">
-                  <p class="group-name m-0">Doubt Solving</p>
-                  <p class="user-name m-0 ml-2">@Aleena</p>
-                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
-                </div>
-                <!-- <div class="group-edit-wrap pl-1 pr-2">
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div> -->
-              </div>
-              <div class="post-content-wrap  mt-2">
-                <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
-                <p class="post-time m-0">29 Aug 2022</p>
-              </div>
-              <div class="card-bottom-section mt-2">
-                <div class="like-btn-wrap">
-                  <i class="fa-regular fa-heart"></i>
-                  <span>0</span>
-                </div>
-                <div class="comment-btn-wrap ml-4">
-                  <i class="fa-regular fa-comment"></i>
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="list-info-wrap mt-3">
-            <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/group-img3.png" alt="">
-            </div>
-            <div class="left-section ml-3">
-              <div class="group-info-container">
-                <div class="group-info-wrap ">
-                  <p class="group-name m-0">Premium</p>
-                  <p class="user-name m-0 ml-2">@Sonu</p>
-                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
-                </div>
-                <!-- <div class="group-edit-wrap pl-1 pr-2">
+              <div class="left-section ml-3">
+                <div class="group-info-container">
+                  <div class="group-info-wrap ">
+                    <p class="group-name m-0">General</p>
+                    <p class="user-name m-0 ml-2">@Arun</p>
+                    <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                  </div>
+                  <!-- <div class="group-edit-wrap pl-1 pr-2">
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                           </div> -->
-              </div>
-              <div class="post-content-wrap  mt-2">
-                <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
-                <p class="post-time m-0">29 Aug 2022</p>
-              </div>
-              <div class="card-bottom-section mt-2">
-                <div class="like-btn-wrap">
-                  <i class="fa-regular fa-heart"></i>
-                  <span>0</span>
                 </div>
-                <div class="comment-btn-wrap ml-4">
-                  <i class="fa-regular fa-comment"></i>
-                  <span>0</span>
+                <div class="post-content-wrap  mt-2">
+                  <div class="post-content mb-0">JavaScript Programming Tutorial - Full JavaScript Course for Beginners
+                  </div>
+                  <p class="post-time m-0">29 Aug 2022</p>
+                </div>
+                <div class="card-bottom-section mt-2">
+                  <div class="like-btn-wrap">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>0</span>
+                  </div>
+                  <div class="comment-btn-wrap ml-4">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>0</span>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="list-info-wrap mt-3">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/group-img2.png" alt="">
+              </div>
+              <div class="left-section ml-3">
+                <div class="group-info-container">
+                  <div class="group-info-wrap ">
+                    <p class="group-name m-0">Doubt Solving</p>
+                    <p class="user-name m-0 ml-2">@Aleena</p>
+                    <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                  </div>
+                  <!-- <div class="group-edit-wrap pl-1 pr-2">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </div> -->
+                </div>
+                <div class="post-content-wrap  mt-2">
+                  <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
+                  <p class="post-time m-0">29 Aug 2022</p>
+                </div>
+                <div class="card-bottom-section mt-2">
+                  <div class="like-btn-wrap">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>0</span>
+                  </div>
+                  <div class="comment-btn-wrap ml-4">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-info-wrap mt-3">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/group-img3.png" alt="">
+              </div>
+              <div class="left-section ml-3">
+                <div class="group-info-container">
+                  <div class="group-info-wrap ">
+                    <p class="group-name m-0">Premium</p>
+                    <p class="user-name m-0 ml-2">@Sonu</p>
+                    <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                  </div>
+                  <!-- <div class="group-edit-wrap pl-1 pr-2">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    </div> -->
+                </div>
+                <div class="post-content-wrap  mt-2">
+                  <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
+                  <p class="post-time m-0">29 Aug 2022</p>
+                </div>
+                <div class="card-bottom-section mt-2">
+                  <div class="like-btn-wrap">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>0</span>
+                  </div>
+                  <div class="comment-btn-wrap ml-4">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-more-wrap m-2 mt-4 ">
+              <h3 class="show-more">Show More</h3>
+            </div>
           </div>
-          <div class="show-more-wrap m-2 mt-4 ">
-            <h3 class="show-more">Show More</h3>
-          </div>
-        </div>
 
 
-        <div class="community-updates-container mt-3 p-3">
-          <div class="card-title-wrap ">
-            <h5 class="m-0 card-title">Posts</h5>
-            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
-          </div>
-          <div class="list-info-wrap mt-3">
-            <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/group-img2.png" alt="">
+          <div id="posts" class="community-updates-container mt-3 p-3">
+            <div class="card-title-wrap ">
+              <h5 class="m-0 card-title">Posts</h5>
+              <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
             </div>
-            <div class="left-section ml-3">
-              <div class="group-info-container">
-                <div class="group-info-wrap ">
-                  <p class="group-name m-0">Doubt Solving</p>
-                  <p class="user-name m-0 ml-2">@Aleena</p>
-                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
-                </div>
-                <!-- <div class="group-edit-wrap pl-1 pr-2">
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div> -->
+            <div class="list-info-wrap mt-3">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/group-img2.png" alt="">
               </div>
-              <div class="post-content-wrap  mt-2">
-                <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
-                <p class="post-time m-0">29 Aug 2022</p>
-              </div>
-              <div class="card-bottom-section mt-2">
-                <div class="like-btn-wrap">
-                  <i class="fa-regular fa-heart"></i>
-                  <span>0</span>
-                </div>
-                <div class="comment-btn-wrap ml-4">
-                  <i class="fa-regular fa-comment"></i>
-                  <span>0</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="list-info-wrap border-0 mt-3">
-            <div class="group-img-wrap">
-              <img class="group-img" src="assets/img/group-img3.png" alt="">
-            </div>
-            <div class="left-section ml-3">
-              <div class="group-info-container">
-                <div class="group-info-wrap ">
-                  <p class="group-name m-0">Premium</p>
-                  <p class="user-name m-0 ml-2">@Sonu</p>
-                  <p class="post-time m-0 ml-2">. Mar 12,2022</p>
-                </div>
-                <!-- <div class="group-edit-wrap pl-1 pr-2">
+              <div class="left-section ml-3">
+                <div class="group-info-container">
+                  <div class="group-info-wrap ">
+                    <p class="group-name m-0">Doubt Solving</p>
+                    <p class="user-name m-0 ml-2">@Aleena</p>
+                    <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                  </div>
+                  <!-- <div class="group-edit-wrap pl-1 pr-2">
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                   </div> -->
-              </div>
-              <div class="post-content-wrap  mt-2">
-                <div class="post-content mb-0">Building a React component with TypeScript , Babel and Parcel
-                  <br>
-                  <p class="post-hash-tags m-0">#React #TypeScript #Babel #Parcel</p>
-
-                  <img class="post-img" src="assets/img/post1.jpg" alt="">
                 </div>
-              </div>
-              <div class="card-bottom-section mt-2">
-                <div class="like-btn-wrap">
-                  <i class="fa-regular fa-heart"></i>
-                  <span>2</span>
+                <div class="post-content-wrap  mt-2">
+                  <div class="post-content mb-0">Using React (Hooks) with D3 – Curved Line Chart</div>
+                  <p class="post-time m-0">29 Aug 2022</p>
                 </div>
-                <div class="comment-btn-wrap ml-4">
-                  <i class="fa-regular fa-comment"></i>
-                  <span>1</span>
+                <div class="card-bottom-section mt-2">
+                  <div class="like-btn-wrap">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>0</span>
+                  </div>
+                  <div class="comment-btn-wrap ml-4">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>0</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="list-info-wrap border-0 mt-3">
+              <div class="group-img-wrap">
+                <img class="group-img" src="assets/img/group-img3.png" alt="">
+              </div>
+              <div class="left-section ml-3">
+                <div class="group-info-container">
+                  <div class="group-info-wrap ">
+                    <p class="group-name m-0">Premium</p>
+                    <p class="user-name m-0 ml-2">@Sonu</p>
+                    <p class="post-time m-0 ml-2">. Mar 12,2022</p>
+                  </div>
+                  <!-- <div class="group-edit-wrap pl-1 pr-2">
+                                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </div> -->
+                </div>
+                <div class="post-content-wrap  mt-2">
+                  <div class="post-content mb-0">Building a React component with TypeScript , Babel and Parcel
+                    <br>
+                    <p class="post-hash-tags m-0">#React #TypeScript #Babel #Parcel</p>
 
+                    <img class="post-img" src="assets/img/post1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="card-bottom-section mt-2">
+                  <div class="like-btn-wrap">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>2</span>
+                  </div>
+                  <div class="comment-btn-wrap ml-4">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>1</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
       <!-- left section end -->
@@ -837,6 +840,27 @@
       }
     }
   </style>
+
+
+<!-- tabcontent change -->
+  <script>
+    function openCity(event, num) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      console.log(tabcontent);
+      for (i = 0; i < tabcontent.length; i++) {
+        if (i == num) {
+          tabcontent[i].style.display = "block";
+        }
+        else {
+          tabcontent[i].style.display = "none";
+
+        }
+      }
+    }
+  </script>
+
+
 
 
   <!-- Bootstrap core JavaScript-->
