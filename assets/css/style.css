@@ -59,11 +59,18 @@ body {
 }
 
 @media (max-width:768px) {
-  .sidebar{
+  .sidebar {
     display: none;
   }
-  body{
+
+  body {
     padding-left: 0px !important;
+  }
+}
+
+@media (min-width:768px) {
+  .sm-community-logo{
+    display: none !important;
   }
 }
 
