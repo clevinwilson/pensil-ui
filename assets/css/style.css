@@ -538,3 +538,24 @@ body {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+
+
+/* card-style */
+
+.box-style {
+  background: white;
+  /* display: flex; */
+  text-align: justify;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+/* tab  */
+.tabcontent {
+  display: none;
+}
+
+.tabbox-show {
+  display: block;
+}
