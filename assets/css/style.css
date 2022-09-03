@@ -66,10 +66,14 @@ body {
   body {
     padding-left: 0px !important;
   }
+
+  .main-content{
+    flex-direction: column-reverse;
+  }
 }
 
 @media (min-width:768px) {
-  .sm-community-logo{
+  .sm-community-logo {
     display: none !important;
   }
 }
