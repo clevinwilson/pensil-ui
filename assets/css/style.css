@@ -19,6 +19,7 @@ body {
   }
 }
 
+/* .sidebar */
 .sidebar {
   transition: all .6s;
   display: block;
@@ -55,6 +56,15 @@ body {
 
 .nav-grouplist:hover {
   background-color: #f2f2f2;
+}
+
+@media (max-width:768px) {
+  .sidebar{
+    display: none;
+  }
+  body{
+    padding-left: 0px !important;
+  }
 }
 
 /* community logo  */
