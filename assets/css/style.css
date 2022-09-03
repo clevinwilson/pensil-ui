@@ -523,6 +523,14 @@ body {
   /* Safari and Chrome */
 }
 
+.tabcontent {
+  display: none;
+}
+
+.tabbox-show {
+  display: block;
+}
+
 @media screen and (max-width:477px) {
   .tab-list {
     padding-left: 110px;
@@ -551,11 +559,19 @@ body {
 }
 
 
-/* tab  */
-.tabcontent {
-  display: none;
+/* members */
+.admin-info {
+  background-color: white;
 }
 
-.tabbox-show {
-  display: block;
+.admin-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-admin-img {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
 }
