@@ -528,3 +528,13 @@ body {
     padding-left: 110px;
   }
 }
+
+/* tab content */
+
+.description {
+  background: white;
+  /* display: flex; */
+  text-align: justify;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
