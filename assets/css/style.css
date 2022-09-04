@@ -539,6 +539,11 @@ body {
   color: black !important;
 }
 
+.active {
+  border-bottom: 3px solid #1d87f1 !important;
+  color: black !important;
+}
+
 .tab-list::-webkit-scrollbar {
   display: none;
   /* Safari and Chrome */

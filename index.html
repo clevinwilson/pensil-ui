@@ -364,19 +364,19 @@
       <div class="col-md-8  mt-4">
         <div class="tab-container">
           <div class="tab-list">
-            <div class="tab-item ml-2" onclick="openCity(event, 0)" tabindex="1">
+            <div class="tab-item ml-2 active" onclick="openContent(event, 0)" tabindex="1">
               Updates
             </div>
-            <div class="tab-item ml-2" onclick="openCity(event, 1)" tabindex="1">
+            <div class="tab-item ml-2" onclick="openContent(event, 1)" tabindex="1">
               Description
             </div>
-            <div class="tab-item ml-2" onclick="openCity(event, 2)" tabindex="1">
+            <div class="tab-item ml-2" onclick="openContent(event, 2)" tabindex="1">
               Members
             </div>
-            <div class="tab-item ml-2" onclick="openCity(event, 3)" tabindex="1">
+            <div class="tab-item ml-2" onclick="openContent(event, 3)" tabindex="1">
               Testimonials
             </div>
-            <div class="tab-item ml-2" onclick="openCity(event, 4)" tabindex="1">
+            <div class="tab-item ml-2" onclick="openContent(event, 4)" tabindex="1">
               FAQs
             </div>
           </div>
@@ -1005,13 +1005,20 @@
 
   <!-- tabcontent change -->
   <script>
-    function openCity(event, num) {
-      var i, tabcontent, tablinks;
+    function openContent(event, num) {
+      var i, tabcontent, tabitems;
       tabcontent = document.getElementsByClassName("tabcontent");
-      console.log(tabcontent);
+      tabitems=document.getElementsByClassName("tab-item");
+
+       // Get all elements with class="tablinks" and remove the class "active"
+      for (i = 0; i < tabitems.length; i++) {
+        tabitems[i].className = tabitems[i].className.replace(" active", "");
+      }
+      
       for (i = 0; i < tabcontent.length; i++) {
         if (i == num) {
           tabcontent[i].style.display = "block";
+          tabitems[i].classList.add("active");
         }
         else {
           tabcontent[i].style.display = "none";
