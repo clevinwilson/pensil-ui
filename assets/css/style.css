@@ -648,3 +648,13 @@ body {
   font-size: 1.2rem;
   background-color: #ffffff;
 }
+
+
+/* Explore Groups */
+
+.group-card-link {
+  float: right;
+  font-weight: 600;
+  cursor: pointer;
+  color: #686868;
+}
