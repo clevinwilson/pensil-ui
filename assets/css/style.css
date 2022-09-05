@@ -679,12 +679,12 @@ body {
 }
 
 .message-wrap {
-  min-height: 630px;
+  background-color: white;
 }
 
 .user-avatar {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -808,7 +808,7 @@ body {
 
 .chat .chat-history .message-data img {
   border-radius: 40px;
-  width: 40px
+  width: 50px
 }
 
 .chat .chat-history .message-data-time {
@@ -868,9 +868,7 @@ body {
   left: 93%
 }
 
-.chat .chat-message {
-  padding: 20px
-}
+
 
 .online,
 .offline,
@@ -905,6 +903,25 @@ body {
   height: 0
 }
 
+.message-box {
+  border-radius: 20px !important;
+  margin-right: 20px;
+}
+
+.send-btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 40px;
+  width: 45px;
+  background-color: #286aff;
+  color: white;
+
+}
+
+
+
 @media only screen and (max-width: 767px) {
   .chat-app .people-list {
     height: 465px;
@@ -915,10 +932,19 @@ body {
     display: none
   }
 
+  .send-btn-wrap {
+    width: 47px;
+
+  }
+
   .chat-app .people-list.open {
     left: 0
   }
 
+  .chat-wrap{
+    display: none;
+  } 
+  
   .chat-app .chat {
     margin: 0
   }

@@ -345,10 +345,7 @@
 
     <!-- Start of content -->
     <section>
-        <div class="row m-0 main-content">
-            <div class="col-md-12">
-                <div class="row m-0 bg-light rounded-2 message-wrap">
-                    
+                <div class="row m-0  rounded-2 message-wrap">
                     <div class="col-md-5 p-0 message-right">
                         <h5 class="m-3 card-title">Messages</h5>
                         <a class="message-info text-decoration-none d-flex align-items-center p-3" href="#">
@@ -370,27 +367,25 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 chat-wrap p-2 m-0">
                         <div class="chat">
                             <div class="chat-header clearfix">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 d-flex align-items-center">
                                         <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="avatar">
+                                            <img src="assets/img/user3.png" alt="avatar">
                                         </a>
                                         <div class="chat-about">
-                                            <h6 class="m-b-0">Aiden Chavez</h6>
-                                            <small>Last seen: 2 hours ago</small>
+                                            <div class="messages-user-name">Arun</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="chat-history">
+                            <div class="chat-history mt-3">
                                 <ul class="m-b-0">
                                     <li class="clearfix">
                                         <div class="message-data text-right">
                                             <span class="message-data-time">10:10 AM, Today</span>
-                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="avatar">
                                         </div>
                                         <div class="message other-message float-right"> Hi Aiden, how are you? How is the project coming along?
                                         </div>
@@ -409,18 +404,16 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="chat-message clearfix">
-                                <div class="input-group mb-0">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fa fa-send"></i></span>
+                            <div class="chat-message clearfix mt-3">
+                                <div class="d-flex p-2">
+                                    <input type="text" class="form-control message-box" placeholder="Enter text here...">
+                                    <div class="send-btn-wrap">
+                                        <span class="w"><i class="fa fa-send"></i></span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Enter text here...">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
             <!-- left section end -->
         </div>
     </section>
@@ -454,118 +447,20 @@
     </div>
 
 
-    <!-- Updates -->
+
     <style>
-        .community-updates-container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            border-top-right-radius: 0px;
-            border-top-left-radius: 0px;
+        @media only screen and (max-width: 767px) {
+            .col-md-12{
+            margin: 0;
+            padding: 0;
         }
-
-
-
-        .group-img-wrap,
-        .group-info-wrap,
-        .group-edit-wrap,
-        .comment-btn-wrap,
-        .comment-btn-wrap {
-            display: inline-block;
+        body{
+            background-color: white;
+            padding-top: 71px !important;
         }
-
-        .group-name,
-        .user-name,
-        .post-time {
-            display: inline;
-            font-size: 25px;
         }
-
-        .user-name,
-        .post-time {
-            font-weight: 300;
-            font-size: 20px;
-            color: #3b3939;
-        }
-
-        .group-img {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        .group-img-wrap {
-            vertical-align: top;
-            transition: none;
-        }
-
-        .group-name {
-            color: #3b3939;
-            font-weight: 600;
-        }
-
-        .list-info-wrap {
-            display: grid;
-            grid-template-columns: 80px 1fr;
-            justify-content: center;
-            border-bottom: 1px solid #d7d7d7;
-            padding-bottom: 6px;
-        }
-
-        .group-info-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-
-        .post-content {
-            font-size: 18px;
-            color: #2b2b2b;
-            display: block;
-        }
-
-        .post-time {
-            font-size: 13px;
-        }
-
-        .card-bottom-section {
-            padding: 3px;
-            display: flex;
-            align-items: center;
-            justify-content: left;
-        }
-
-        .like-btn-wrap,
-        .comment-btn-wrap {
-            cursor: pointer;
-        }
-
-        @media screen and (max-width:768px) {
-
-            .group-name,
-            .user-name,
-            .post-time {
-                font-size: 13px;
-            }
-
-            .group-img {
-                width: 58px;
-                height: 58px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
-
-            .list-info-wrap {
-                grid-template-columns: 59px 1fr;
-            }
-        }
+        
     </style>
-
-
-
-
-
 
 
     <!-- Bootstrap core JavaScript-->
