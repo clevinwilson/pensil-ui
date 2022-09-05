@@ -360,7 +360,7 @@
               <button class="community-join-btn">Join</button>
             </div>
           </div>
-          <p>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the
+          <p class="mt-3">JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the
             World Wide Web,
             alongside HTML and CSS.</p>
         </div>
@@ -372,7 +372,7 @@
       <div class="col-md-8  mt-4">
         <div class="tab-container">
           <div class="tab-list">
-            <div class="tab-item ml-2 active" onclick="openContent(event, 0)" tabindex="1">
+            <div class="tab-item ml-2 tab-item-active" onclick="openContent(event, 0)" tabindex="1">
               Updates
             </div>
             <div class="tab-item ml-2" onclick="openContent(event, 1)" tabindex="1">
@@ -711,7 +711,7 @@
                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                       <div class="panel-heading p-3" role="tab" id="heading0">
-                        <h3 class="panel-title">
+                        <h3 class="panel-title m-0">
                           <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
                             href="#collapse0" aria-expanded="true" aria-controls="collapse0">
                             What is the purpose of this community ?
@@ -720,15 +720,15 @@
                       </div>
                       <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
                         <div class="panel-body p-3 px-3 mb-4">
-                          <p>This community is created to help people.</p>
+                          <p class="answer">This community is created to help people.</p>
                         </div>
                       </div>
                     </div>
 
                     <div class="panel panel-default mt-2">
                       <div class="panel-heading p-3" role="tab" id="heading1">
-                        <h3 class="panel-title">
-                          <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion"
+                        <h3 class="panel-title m-0">
+                          <a class="collapsed " role="button" title="" data-toggle="collapse" data-parent="#accordion"
                             href="#collapse1" aria-expanded="true" aria-controls="collapse1">
                             I am new to this community . What should I do ?
                           </a>
@@ -736,7 +736,7 @@
                       </div>
                       <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
                         <div class="panel-body p-3 px-3 mb-4">
-                          <p>This is a community for helping people. No need to worry about anything. There is
+                          <p  class="answer">This is a community for helping people. No need to worry about anything. There is
                           a separate group for newbies.</p>
                         </div>
                       </div>
@@ -1020,13 +1020,13 @@
 
        // Get all elements with class="tablinks" and remove the class "active"
       for (i = 0; i < tabitems.length; i++) {
-        tabitems[i].className = tabitems[i].className.replace(" active", "");
+        tabitems[i].className = tabitems[i].className.replace(" tab-item-active", "");
       }
       
       for (i = 0; i < tabcontent.length; i++) {
         if (i == num) {
           tabcontent[i].style.display = "block";
-          tabitems[i].classList.add("active");
+          tabitems[i].classList.add("tab-item-active");
         }
         else {
           tabcontent[i].style.display = "none";

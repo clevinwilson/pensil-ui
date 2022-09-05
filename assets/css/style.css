@@ -554,6 +554,11 @@ body {
   color: black !important;
 }
 
+.tab-item-active {
+  border-bottom: 3px solid #1d87f1 !important;
+  color: black !important;
+}
+
 
 
 .tab-list::-webkit-scrollbar {
@@ -626,7 +631,7 @@ body {
 
 .accordion-section .panel-default .panel-title a {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: black;
   text-decoration: none;
@@ -651,7 +656,9 @@ body {
   background-color: #ffffff;
 }
 
-
+.answer{
+  font-size: 15px;
+}
 /* Explore Groups */
 
 .group-card-link {
@@ -678,6 +685,7 @@ body {
   width: 60px;
   height: 60px;
   object-fit: cover;
+  border-radius: 50%;
 }
 
 .message-right {
