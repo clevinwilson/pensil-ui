@@ -640,7 +640,7 @@ body {
 .accordion-section .panel-default .panel-title a:after {
   font-family: 'FontAwesome';
   font-style: normal;
-  font-size: 2rem;
+  font-size: 1.2rem;
   content: "\f106";
   color: #1f7de2;
   float: right;
