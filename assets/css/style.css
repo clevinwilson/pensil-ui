@@ -660,3 +660,40 @@ body {
   cursor: pointer;
   color: #686868;
 }
+
+/* messages */
+
+.messages-user-name {
+  display: inline-block;
+  font-size: 21px;
+  color: black;
+  font-weight: 600;
+}
+
+.message-wrap {
+  min-height: 630px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.message-right {
+  border-right: 1px solid #dfdbdb;
+  text-decoration: none;
+}
+
+.message-info {
+  border-bottom: 1px solid #dfdbdb;
+  transition: all .4s;
+}
+
+.message-info:hover {
+  background-color: #f0f3fa;
+}
+
+.short-message {
+  font-size: 14px;
+}

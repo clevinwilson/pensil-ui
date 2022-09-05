@@ -36,7 +36,9 @@
             class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
             <!-- Sidebar Toggle (Topbar) -->
-          
+            <!-- <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="fa fa-bars"></i>
+      </button> -->
             <a class="sm-community-logo sidebar-brand d-flex align-items-center justify-content-center"
                 href="index.html">
 
@@ -49,6 +51,20 @@
                     </div>
                 </div>
             </a>
+
+
+            <!-- Topbar Search -->
+            <!-- <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div class="input-group">
+          <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+            aria-label="Search" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search fa-sm"></i>
+            </button>
+          </div>
+        </div>
+      </form> -->
 
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
@@ -127,6 +143,71 @@
                     </div>
                 </li>
 
+                <!-- Nav Item - Messages -->
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope fa-fw"></i>
+                        <!-- Counter - Messages -->
+                        <span class="badge badge-danger badge-counter">7</span>
+                    </a>
+                    <!-- Dropdown - Messages -->
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                        aria-labelledby="messagesDropdown">
+                        <h6 class="dropdown-header">
+                            Message Center
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="font-weight-bold">
+                                <div class="text-truncate">Hi there! I am wondering if you can help me with a problem
+                                    I've been
+                                    having.</div>
+                                <div class="small text-gray-500">Emily Fowler · 58m</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">I have the photos that you ordered last month, how would you
+                                    like them
+                                    sent to you?</div>
+                                <div class="small text-gray-500">Jae Chun · 1d</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                <div class="status-indicator bg-warning"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">Last month's report looks great, I am very happy with the
+                                    progress so
+                                    far, keep up the good work!</div>
+                                <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me
+                                    that people
+                                    say this to all dogs, even if they aren't good...</div>
+                                <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                    </div>
+                </li>
 
                 <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -183,7 +264,7 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item leftbar-item " tabindex="1">
+            <li class="nav-item leftbar-item  ">
                 <a class="nav-link nav-link-item" href="index.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
@@ -193,8 +274,8 @@
                     </svg>
                     <span class="nav-text ml-1">Home</span></a>
             </li>
-            <li class="nav-item active leftbar-item">
-                <a class="nav-link  nav-link-item" href="groups.html">
+            <li class="nav-item leftbar-item">
+                <a class="nav-link nav-link-item" href="groups.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0V0z"></path>
@@ -204,7 +285,7 @@
                     </svg>
                     <span class="nav-text ml-1">Explore Groups</span></a>
             </li>
-            <li class="nav-item leftbar-item">
+            <li class="nav-item leftbar-item active">
                 <a class="nav-link nav-link-item" href="messages.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
@@ -216,7 +297,7 @@
                     <span class="nav-text  ml-1">Direct Message</span></a>
             </li>
             <li class="nav-item leftbar-item">
-                <a class="nav-link nav-link-item " href="event.html">
+                <a class="nav-link nav-link-item " href="events.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
                         <path fill="none" d="M0 0h24v24H0z"></path>
@@ -265,126 +346,36 @@
     <!-- Start of content -->
     <section>
         <div class="row m-0 main-content">
-           <div class="col-md-8  mt-4">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card" >
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/189aa059.png" alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">General</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                            the real world intact .</p>
-                            <a  class="group-card-link">Join</a>
-                        </div>
+            <div class="col-md-12">
+                <div class="row m-0 bg-light rounded-2 message-wrap">
+                    
+                    <div class="col-md-5 p-0 message-right">
+                        <h5 class="m-3 card-title">Messages</h5>
+                        <a class="message-info text-decoration-none d-flex align-items-center p-3" href="#">
+                         <div class="user-avatar-wrap d-inline-block">
+                            <img class="user-avatar" src="assets/img/user3.png" alt="">
+                         </div>
+                         <div class=" d-inline-block ml-3">
+                            <div class="messages-user-name">Arun</div>
+                            <div class="text-dark short-message" >Hello, how are you?</div>
+                         </div>
+                        </a>
+                        <a class="message-info text-decoration-none d-flex align-items-center p-3" href="#">
+                            <div class="user-avatar-wrap d-inline-block">
+                                <img class="user-avatar" src="assets/img/user2.png" alt="">
+                            </div>
+                            <div class=" d-inline-block ml-3">
+                                <div class="messages-user-name">Arun</div>
+                                <div class="text-dark short-message">Hello, how are you?</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group2.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">Doubt Solving</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">Addresses biases & behaviors
-                            that hamper innovation .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group3.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">Premium</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                                the real world intact .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group4.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">General</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                                the real world intact .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-           </div>
             <!-- left section end -->
-
-
-            <!-- right section -->
-            <!-- add widget -->
-            <div class="col-md-4  mt-4">
-                <div class="right-section">
-
-
-                    <!-- ongoing -->
-                    <div class=" card ">
-                        <div class="card-title-wrap p-3">
-                            <h5 class="m-0 card-title">ongoing</h5>
-                            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="owner-list-container m-2">
-                                <div class="ongoing-card-info">
-                                    <img class="owner-img" src="assets/img/group-img1.png" alt="">
-                                    <div class="group-title-info ml-2">
-                                        <p class="owner-name m-0">General</p>
-                                        <p class="m-0"><span class="mr-1 text-primary">&#x2022;</span>Audio room</p>
-                                    </div>
-                                </div>
-                                <button class="join-btn">Join</button>
-                            </div>
-                            <div class="owner-list-container m-2">
-                                <div class="ongoing-card-info">
-                                    <img class="owner-img" src="assets/img/group-img2.png" alt="">
-                                    <div class="group-title-info ml-2">
-                                        <p class="owner-name m-0">Doubt Solving</p>
-                                        <p class="m-0"><span class="mr-1 text-danger">&#x2022;</span>Live</p>
-                                    </div>
-                                </div>
-                                <button class="join-btn">Join</button>
-                            </div>
-                            <div class="show-more-wrap m-2 ">
-                                <h3 class="show-more">Show More</h3>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- upcoming events -->
-                    <div class=" card mt-3">
-                        <div class="card-title-wrap p-3">
-                            <h5 class="m-0 card-title">Upcoming Events</h5>
-                            <!-- <i class="fa-solid fa-ellipsis-vertical mr-3"></i> -->
-                        </div>
-                        <div class="card-body p-3">
-                            <div class="quick-event-container">
-                                <div class="quick-event-wrap m-2">
-                                    <div class="quickevent-icon-wrap">
-                                        <i class="fa-regular fa-calendar"></i>
-                                    </div>
-                                    <div class="quickevent-text-wrap">
-                                        <p class="event-time">15 Sep - 9:30 AM</p>
-                                        <p class="event-title">Complete JavaScript Course</p>
-                                    </div>
-                                    <div class="event-notify-icon-wrap">
-                                        <i class="fa-solid fa-bell notify-icon"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -416,6 +407,140 @@
         </div>
     </div>
 
+
+    <!-- Updates -->
+    <style>
+        .community-updates-container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+        }
+
+
+
+        .group-img-wrap,
+        .group-info-wrap,
+        .group-edit-wrap,
+        .comment-btn-wrap,
+        .comment-btn-wrap {
+            display: inline-block;
+        }
+
+        .group-name,
+        .user-name,
+        .post-time {
+            display: inline;
+            font-size: 25px;
+        }
+
+        .user-name,
+        .post-time {
+            font-weight: 300;
+            font-size: 20px;
+            color: #3b3939;
+        }
+
+        .group-img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .group-img-wrap {
+            vertical-align: top;
+            transition: none;
+        }
+
+        .group-name {
+            color: #3b3939;
+            font-weight: 600;
+        }
+
+        .list-info-wrap {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            justify-content: center;
+            border-bottom: 1px solid #d7d7d7;
+            padding-bottom: 6px;
+        }
+
+        .group-info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .post-content {
+            font-size: 18px;
+            color: #2b2b2b;
+            display: block;
+        }
+
+        .post-time {
+            font-size: 13px;
+        }
+
+        .card-bottom-section {
+            padding: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .like-btn-wrap,
+        .comment-btn-wrap {
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .group-name,
+            .user-name,
+            .post-time {
+                font-size: 13px;
+            }
+
+            .group-img {
+                width: 58px;
+                height: 58px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .list-info-wrap {
+                grid-template-columns: 59px 1fr;
+            }
+        }
+    </style>
+
+
+    <!-- tabcontent change -->
+    <script>
+    function openContent(event, num) {
+      var i, tabcontent, tabitems;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      tabitems=document.getElementsByClassName("tab-item");
+
+       // Get all elements with class="tablinks" and remove the class "active"
+      for (i = 0; i < tabitems.length; i++) {
+        tabitems[i].className = tabitems[i].className.replace(" active", "");
+      }
+      
+      for (i = 0; i < tabcontent.length; i++) {
+        if (i == num) {
+          tabcontent[i].style.display = "block";
+          tabitems[i].classList.add("active");
+        }
+        else {
+          tabcontent[i].style.display = "none";
+
+        }
+      }
+    }
+    </script>
 
 
 
