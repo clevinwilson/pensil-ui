@@ -36,7 +36,7 @@
             class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
             <!-- Sidebar Toggle (Topbar) -->
-          
+
             <a class="sm-community-logo sidebar-brand d-flex align-items-center justify-content-center"
                 href="index.html">
 
@@ -193,7 +193,7 @@
                     </svg>
                     <span class="nav-text ml-1">Home</span></a>
             </li>
-            <li class="nav-item active leftbar-item">
+            <li class="nav-item  leftbar-item">
                 <a class="nav-link  nav-link-item" href="groups.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
                     </svg>
                     <span class="nav-text  ml-1">Direct Message</span></a>
             </li>
-            <li class="nav-item leftbar-item">
+            <li class="nav-item active leftbar-item">
                 <a class="nav-link nav-link-item " href="events.html">
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="22"
                         width="22" xmlns="http://www.w3.org/2000/svg">
@@ -265,64 +265,76 @@
     <!-- Start of content -->
     <section>
         <div class="row m-0 main-content">
-           <div class="col-md-8  mt-4">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <div class="card" >
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/189aa059.png" alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">General</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                            the real world intact .</p>
-                            <a  class="group-card-link">Join</a>
+            <div class="col-md-8">
+                <div class="row m-0   event-info-container p-3">
+                    <div class="col-md-5 p-0 event-card d-flex justify-content-center align-items-center">
+                        <img class="event-img" src="assets/img/ReactJS.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 mt-1">
+                        <div class="event-info-wrap p-1">
+                            <h3 class="text-dark">ReactNext 2022</h3>
+                            <p>There was something for Angular lovers, time for React Developers. In June 2022, you can
+                                join the seventh edition of
+                                ReactNext - the largest in Israel and one of the best React conferences.</p>
+                        </div>
+                        <div class="event-card-bottom d-flex justify-content-between align-items-center">
+                            <div class="event-details d-inline-block">
+                                <p><i class="fa-regular fa-clock"></i><span class="ml-2">Monday, September 12, 2022 at
+                                        9:00 AM</span></p>
+                                <p><i class="fa-solid fa-location-dot"></i><span class="ml-2">Bangalore</span></p>
+                            </div>
+                            <div class="event-Aattend-btn-wrap d-inline-block">
+                                <button class="event-attend-btn">Attend </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group2.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">Doubt Solving</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">Addresses biases & behaviors
-                            that hamper innovation .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group3.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">Premium</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                                the real world intact .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img class="card-img-top" style="height:140px; object-fit: cover;" src="assets/img/group4.jpg"
-                            alt="Card image cap">
-                        <div class="groups-card-body p-2">
-                            <h6 class="card-title m-0">General</h6>
-                            <p style="font-size: 11px;" class="card-text mt-1 m-0">The idea is to keep contact with
-                                the real world intact .</p>
-                            <a class="group-card-link">Join</a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-           </div>
+            <style>
+                .event-img {
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 222px;
+                    object-fit: cover;
+                }
+
+
+                .event-info-container {
+                    background-color: white;
+                    border-radius: 10px;
+                }
+
+                .event-card-bottom {
+                    font-size: 13px;
+                }
+
+                .event-attend-btn {
+                    background-color: #3774fd;
+                    border: none;
+                    height: 39px;
+                    width: 70px;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    color: white;
+                }
+
+                @media screen and (max-width:768px) {
+                    .event-info-container {
+                        margin-top: 18px !important;
+                    }
+
+                    .event-img {
+                        height: 192px;
+                    }
+                }
+            </style>
+
             <!-- left section end -->
 
 
             <!-- right section -->
             <!-- add widget -->
-            <div class="col-md-4  mt-4">
+            <div class="col-md-4 ">
                 <div class="right-section">
 
 
