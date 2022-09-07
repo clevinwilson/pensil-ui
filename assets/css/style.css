@@ -920,6 +920,14 @@ body {
 
 }
 
+.chat-message-sm-devices {
+  position: absolute;
+  bottom: 48px;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -941,7 +949,7 @@ body {
     left: 0
   }
 
-  .chat-wrap {
+  #chat-wrap {
     display: none;
   }
 
