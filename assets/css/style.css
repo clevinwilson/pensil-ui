@@ -1049,3 +1049,32 @@ body {
     height: 192px;
   }
 }
+
+/* sm device nav bar */
+.nav-sm-contaier {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+  border-top: 1px solid #bdbdbd;
+}
+
+.nav-sm-item {
+  display: inline-block;
+}
+
+.sm-nav-link-item-active {
+  color: #1d87f1;
+}
+
+@media screen and (max-width:768px) {
+
+  .nav-sm-contaier {
+    display: flex;
+  }
+}
