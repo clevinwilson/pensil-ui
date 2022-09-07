@@ -1008,6 +1008,11 @@ body {
     font-size: 13px;
   }
 
+  .tags-container {
+    grid-template-columns: 1fr 1fr;
+
+  }
+
 }
 
 
